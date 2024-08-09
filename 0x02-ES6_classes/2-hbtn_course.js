@@ -9,7 +9,7 @@ export default class HolbertonCourse {
     if (!Array.isArray(students)) {
       throw TypeError('Students must be an array');
     }
-    students.foreach(student => {
+    students.forEach(student => {
         if (typeof student !== 'string') {
             throw TypeError('Students must be an array of strings');
         }
@@ -35,7 +35,7 @@ export default class HolbertonCourse {
   }
   set students(value) {
     if (!Array.isArray(students)) throw TypeError('Students must be an array');
-    students.foreach(student => {
+    students.forEach(student => {
         if (typeof student !== 'string') {
             throw TypeError('Students must be an array of strings');}
         });
