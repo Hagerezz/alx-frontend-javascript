@@ -3,7 +3,7 @@ export default function updateStudentGradeByCity(array, city, newgrades) {
     const studentGrade = newgrades.find((grade) => grade.studentId === student.id);
     return {
       ...array,
-      grade: studentGrade ? studentGrade.grade : 'N/A',
+      grade: studentGrade ? studentGrade.grade : 'N/a',
     };
   });
 }
